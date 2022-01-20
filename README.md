@@ -1,2 +1,2 @@
 # leetcode
-Collection of LeetCode to apply skills in different kind of alg!!
+Collection of LeetCode problems to apply skills in different kind of alg!!
