@@ -21,22 +21,22 @@ class Solution:
         # 2N > n(n) so 2N >n^2 = sqrt(2N) > n
         
         # initial value 
-        # count = 1
-        # # smaller values 
-        # s= 2 
-        # target = math.sqrt(2*n)
-        # while s < target:
-        #     if (n-s*frac(s-1,2)) % 2 == 0:
-        #         count += 1
-        #     s +=1 
-        # return count \count = 1
+        count = 1
+        # smaller values 
+        n_ways = 2 
+        target = math.sqrt(2*n)
+        while n_ways < target:
+            if (n - n_ways*(n_ways-1)/2) % n_ways == 0:
+                count += 1
+            n_ways += 1 
+        return count
         
         # smallest size
-        count = 1 
-        s = 2
-        target = math.sqrt(2*n)
-        while s < target:
-            if (n - s*(s-1)/2) % s == 0:
-                count += 1
-            s += 1
-        return count
+        # count = 1 
+        # s = 2
+        # target = math.sqrt(2*n)
+        # while s < target:
+        #     if (n - s*(s-1)/2) % s == 0:
+        #         count += 1
+        #     s += 1
+        # return count
