@@ -1,3 +1,11 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        return (3*sum(set(nums)) - sum((nums)))//2
+        freq = {}
+        for num in nums:
+            if num not in freq:
+                freq[num] = 1
+            else:
+                freq[num] +=1
+        for key in freq:
+            if freq[key] == 1:
+                return key 
